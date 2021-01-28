@@ -6,7 +6,7 @@ To deploy a model we create the following resources
 
 View the yaml containing specs for creating resources
 
-`git clone https://github.com/twarik/maven.git`{{execute}}
+`git clone https://github.com/twarik/katacoda-scenarios.git`{{execute}}
 
 `cat ./maven/resources.yaml`{{execute}}
 
