@@ -1,10 +1,11 @@
 {
-  "title": "Creating a Katacoda Course",
-  "description": "Learn how to create a collection of Katacoda scenarios into a course",
+  "title": "Serving ML Models with TensorFlow Serving and Kubeflow",
+  "description": "How to Serve Machine Learning Models with TensorFlow Serving and Kubeflow",
+
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Pathway Files",
+        "title": "Step 1 - Setup",
         "text": "step1.md"
       },
       {
