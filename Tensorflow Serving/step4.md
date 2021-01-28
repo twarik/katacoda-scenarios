@@ -3,4 +3,4 @@ If the service type is LoadBalancer, it will have its own accessible external ip
 
 And then send the request
 
-`curl -X POST -d @input.json http://EXTERNAL_IP:8500/v1/models/mnist:predict`{{execute}}
+`curl -X POST -d @input.json http://localhost:8500/v1/models/mnist:predict`{{execute}}
