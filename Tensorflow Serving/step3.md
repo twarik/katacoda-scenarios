@@ -6,7 +6,7 @@ To deploy a model we create following resources
 
 Clone this manifests to create resources for our deployment and serve the model.
 
-`curl -s https://github.com/twarik/maven/resources.yaml`{{execute}}
+`curl -s https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
 
 Create resources
 `microk8s kubectl create -f resources.yaml`{{execute}}
