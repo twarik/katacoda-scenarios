@@ -5,19 +5,19 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Setup",
+        "title": "Step 1 - Kubeflow environment setup",
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Reusing Scenarios",
+        "title": "Step 2 - Preparing servable model",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Using katacoda CLI to create a course",
+        "title": "Step 3 - creating resources and deploy model",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - Using katacoda CLI to add existing scenarios to a course",
+        "title": "Step 4 - Sending prediction request directly",
         "text": "step4.md"
       }
     ],
