@@ -1,5 +1,5 @@
 {
-  "title": "Serving ML Models with TensorFlow Serving and Kubeflow",
+  "title": "Serving ML Models with TF Serving and Kubeflow",
   "description": "How to Serve Machine Learning Models with TensorFlow Serving and Kubeflow",
 
   "details": {
