@@ -7,5 +7,4 @@ git clone https://github.com/tensorflow/serving`{{execute}}
 
 
 Set path to the model.
-`source=/tmp/tfserving/serving/tensorflow_serving/servables/tensorflow/testdata/saved_model_half_plus_two_cpu,
-target=/models/half_plus_two`{{execute}}
+`source=/serving/tensorflow_serving/servables/tensorflow/testdata/saved_model_half_plus_two_cpu`{{execute}}
