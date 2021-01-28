@@ -40,6 +40,8 @@ Verify that Docker Engine is installed correctly by running the hello-world im
 
 `docker run hello-world`{{execute}}
 
+`docker run hello-world`{{copy}}
+
 ## Install TensorFlow model server
 
 
