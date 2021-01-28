@@ -6,9 +6,11 @@ We will use microk8s (a low-ops, minimal production Kubernetes) to install Kubef
 
 `sudo snap install microk8s --classic`{{execute}}
 
-Turn on kubeflow and other services we want.
-`microk8s enable dashboard dns registry istio
-microk8s enable kubeflow`{{execute}}
+Turn on the services need for kubeflow.
+`microk8s enable dashboard dns registry istio`{{execute}}
+
+Turn on kubeflow.
+`microk8s enable kubeflow`{{execute}}
 
 Check the status while Kubernetes starts
 `microk8s status --wait-ready`{{execute}}
