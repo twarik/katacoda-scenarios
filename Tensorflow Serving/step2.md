@@ -5,4 +5,4 @@ To get this model, first clone the TensorFlow Serving repo.
 `git clone https://github.com/tensorflow/serving`{{execute}}
 
 Set path to the model.
-`source=/root/serving/tensorflow_serving/servables/tensorflow/testdata/saved_model_half_plus_two_cpu`{{execute}}
+`model_dir =/root/serving/tensorflow_serving/servables/tensorflow/testdata/saved_model_half_plus_two_cpu`{{execute}}
