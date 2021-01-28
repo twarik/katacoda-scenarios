@@ -6,9 +6,11 @@ To deploy a model we create the following resources
 
 View the yaml containing specs for creating resources
 
-`cat resources.yaml`{{execute}}
+`git clone https://github.com/twarik/maven.git`{{execute}}
+
+`cat /maven/resources.yaml`{{execute}}
 
 Deployed via Kubectl
 
 Create resources
-`microk8s kubectl create -f resources.yaml`{{execute}}
+`microk8s kubectl create -f /maven/resources.yaml`{{execute}}
