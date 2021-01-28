@@ -10,15 +10,15 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Preparing servable model",
+        "title": "Step 2 - Prepare and store a servable model",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - creating resources and deploy model",
+        "title": "Step 3 - create resources and deploy model",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - Sending prediction request directly",
+        "title": "Step 4 - Send prediction request directly",
         "text": "step4.md"
       }
     ],
