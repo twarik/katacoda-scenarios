@@ -14,13 +14,14 @@ Create resources
 
 `microk8s kubectl create -f ./katacoda-scenarios/resources.yaml`{{execute}} -->
 
-Downlaod the yaml manifest for creating resources
+Download the yaml manifest for creating resources
 
-```
-apt install wget
+Install wget package
+`apt install wget`{{execute}}
 
-wget https://raw.githubusercontent.com/twarik/maven/main/resources.yaml
-```{{execute}}
+Download the yaml manifest
+
+`wget https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
 
 View the yaml containing specs for creating resources
 
