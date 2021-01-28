@@ -8,9 +8,9 @@ View the yaml containing specs for creating resources
 
 `git clone https://github.com/twarik/maven.git`{{execute}}
 
-`cat /maven/resources.yaml`{{execute}}
+`cat ./maven/resources.yaml`{{execute}}
 
 Deployed via Kubectl
 
 Create resources
-`microk8s kubectl create -f /maven/resources.yaml`{{execute}}
+`microk8s kubectl create -f ./maven/resources.yaml`{{execute}}
