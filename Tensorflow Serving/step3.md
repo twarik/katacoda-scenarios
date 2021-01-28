@@ -31,4 +31,5 @@ View the yaml containing specs for creating resources
 
 Create resources
 
-`microk8s kubectl create -f ./resources.yaml`{{execute}}
+<!-- `microk8s kubectl create -f ./resources.yaml`{{execute}} -->
+`kubectl create -f ./resources.yaml`{{execute}}
