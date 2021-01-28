@@ -1,6 +1,6 @@
 If the service type is LoadBalancer, it will have its own accessible external ip. Get the external ip by:
-`kubectl get svc mnist-service`{{execute}}
+`microk8s kubectl get svc mnist-service`{{execute}}
 
 And then send the request
 
-curl -X POST -d @input.json http://EXTERNAL_IP:8500/v1/models/mnist:predict
+`curl -X POST -d @input.json http://EXTERNAL_IP:8500/v1/models/mnist:predict`{{execute}}
