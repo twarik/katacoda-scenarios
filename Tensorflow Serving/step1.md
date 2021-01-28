@@ -20,7 +20,8 @@ Check the status while Kubernetes starts
 
 ## Install docker
 
-`apt-get update
+```
+apt-get update
 
 apt-get install \
     apt-transport-https \
@@ -40,7 +41,8 @@ add-apt-repository \
 
 apt-get update
 
-apt-get install docker-ce docker-ce-cli containerd.io`{{execute}}
+apt-get install docker-ce docker-ce-cli containerd.io
+```{{execute}}
 
 Verify that Docker Engine is installed correctly by running the hello-world image.
 
