@@ -10,7 +10,7 @@ View the yaml containing specs for creating resources
 
 `cat ./katacoda-scenarios/resources.yaml`{{execute}}
 
-Deployed via Kubectl
+## Deployed via Kubectl
 
 Create resources
 
