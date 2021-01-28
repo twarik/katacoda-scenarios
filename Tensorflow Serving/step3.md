@@ -6,9 +6,9 @@ To deploy a model we create the following resources
 
 View the yaml containing specs for creating resources
 
-`cat ~/resources.yaml`{{execute}}
+`cat resources.yaml`{{execute}}
 
 Deployed via Kubectl
 
 Create resources
-`microk8s kubectl create -f ~/resources.yaml`{{execute}}
+`microk8s kubectl create -f resources.yaml`{{execute}}
