@@ -13,4 +13,5 @@ View the yaml containing specs for creating resources
 Deployed via Kubectl
 
 Create resources
+
 `microk8s kubectl create -f ./maven/resources.yaml`{{execute}}
