@@ -6,15 +6,13 @@ we will use microk8s (a Low-ops, minimal production Kubernetes) to install Kubef
 
 ## Install docker
 
-`apt-get update`{{execute}}
-`apt-get install \
+`apt-get update
+apt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
     gnupg-agent \
     software-properties-common
-
-
     `{{execute}}
 
 ## Install TensorFlow Serving
