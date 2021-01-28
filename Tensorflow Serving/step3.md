@@ -18,7 +18,8 @@ Downlaod the yaml manifest for creating resources
 
 ```apt install wget
 
-wget https://raw.githubusercontent.com/twarik/maven/main/resources.yaml```{{execute}}
+wget https://raw.githubusercontent.com/twarik/maven/main/resources.yaml
+```{{execute}}
 
 View the yaml containing specs for creating resources
 
