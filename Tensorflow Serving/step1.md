@@ -2,7 +2,7 @@ Before getting started, first install kubernetes, docker and tensorflow model se
 
 ## Install kubernetes
 
-We will use microk8s (a low-ops, minimal production Kubernetes) to install Kubeflow for our scenario.
+We will use microk8s (a low-ops, minimal production Kubernetes) to deploy Kubeflow for our scenario.
 
 `sudo snap install microk8s --classic`{{execute}}
 
