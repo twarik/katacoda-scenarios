@@ -1,3 +1,17 @@
+Before getting started, first install kubernetes, docker and tensorflow model server.
+
+## Install kubernetes
+
+we will use microk8s (a Low-ops, minimal production Kubernetes) to install Kubeflow for our scenario.
+
+## Install docker
+
+## Install TensorFlow Serving
+
+This is all you need - one command line!
+
+`apt-get install tensorflow-model-server`{{execute}}
+
 A Katacoda course is defined by creating a pathway file. The pathway defines which scenarios should be included in the course and the order to display them.
 
 The collection of examples contains two courses, one to describe all the Katacoda content and another to describe the key Katacoda environments.
