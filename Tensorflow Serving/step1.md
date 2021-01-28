@@ -13,7 +13,6 @@ microk8s enable kubeflow`{{execute}}
 Check the status while Kubernetes starts
 `microk8s status --wait-ready`{{execute}}
 
-
 ## Install docker
 
 `apt-get update
