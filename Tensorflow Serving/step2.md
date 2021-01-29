@@ -2,8 +2,11 @@ For this scenario we will deploy a pretrained saved model from Tensorflow/models
 
 To get this model, first clone the TensorFlow Serving repo.
 
-`git clone https://github.com/tensorflow/serving`{{execute}}
+<!-- `git clone https://github.com/tensorflow/serving`{{execute}} -->
+`git clone https://github.com/twarik/maven`{{execute}}
 
 Set path to the location of demo models.
 
-`model_dir=/root/serving/tensorflow_serving/servables/tensorflow/testdata/saved_model_half_plus_two_cpu`{{execute}}
+<!-- `model_dir=/root/serving/tensorflow_serving/servables/tensorflow/testdata/saved_model_half_plus_two_cpu`{{execute}} -->
+
+`model_dir=/root/maven/saved_model_customer_churn`{{execute}}
