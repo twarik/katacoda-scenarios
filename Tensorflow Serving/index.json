@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Kubeflow environment setup",
+        "title": "Step 1 - environment setup",
         "text": "step1.md"
       },
       {
