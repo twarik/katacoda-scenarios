@@ -33,6 +33,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "kubernetes-kubeflow"
+    "imageid": "ubuntu:1804"
   }
 }
