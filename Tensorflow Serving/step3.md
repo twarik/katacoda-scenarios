@@ -4,7 +4,7 @@ To deploy a model we create the following resources
 - An Istio virtual service to route traffic to the model and expose it through the Istio gateway
 - An Istio DestinationRule is for doing traffic splitting.
 
-We create the resources using the Kubernetes config resources.yaml.
+We create the above resources using the Kubernetes config resources.yaml.
 
 Install wget package
 `apt install wget`{{execute}}
