@@ -4,11 +4,13 @@ Before getting started, first install kubernetes, docker and tensorflow model se
 
 We will use microk8s (a low-ops, minimal production Kubernetes) to deploy Kubeflow for our scenario.
 
-`sudo snap install microk8s --classic`{{execute}}
+`sudo snap install microk8s --classic --channel=1.18/stable`{{execute}}
+<!-- `sudo snap install microk8s --classic`{{execute}} -->
 
 Turn on the services need for kubeflow.
 
-`microk8s enable dashboard dns registry istio`{{execute}}
+<!-- `microk8s enable dashboard dns registry istio`{{execute}} -->
+`microk8s enable dns storage dashboard`{{execute}}
 
 Turn on kubeflow.
 
