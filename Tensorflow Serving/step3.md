@@ -26,8 +26,10 @@ Create resources using the config resources.yaml
 
 The output should look like:
 
-`deployment "resnet-deployment" created
-service "resnet-service" created`
+`service/half-plus-two-service created
+deployment.apps/half-plus-two-v1 created
+destinationrule.networking.istio.io/half-plus-two-service created
+virtualservice.networking.istio.io/half-plus-two-service created`
 
 view the status of the deployment:
 
