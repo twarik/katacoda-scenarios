@@ -22,7 +22,8 @@ Have a look at the yaml file content
 Create resources using the config resources.yaml
 
 <!-- `microk8s kubectl create -f ./resources.yaml`{{execute}} -->
-`kubectl create -f ./resources.yaml`{{execute}}
+<!-- `kubectl create -f ./resources.yaml`{{execute}} -->
+`kubectl create -f https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
 
 The output should look like:
 
