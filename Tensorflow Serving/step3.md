@@ -46,6 +46,6 @@ view the status of the service:
 
 It can take a while for everything to be up and running.
 
-`kubectl describe service half-plus-two-service`{{execute}}
+`kubectl describe service customer-churn-service`{{execute}}
 
 The service external IP address is listed next to LoadBalancer Ingress
