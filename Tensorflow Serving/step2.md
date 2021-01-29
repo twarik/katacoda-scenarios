@@ -1,3 +1,13 @@
+To export and save a model as TensorFlow servable.
+
+```python
+import tensorflow as tf
+tf.saved_model.save(model,
+                    export_dir="./saved_model_name",
+                    signatures=None
+)
+```
+
 For this scenario we will deploy a pretrained saved model from Tensorflow/models. We will use a toy model called **Half plus two** which generates  **`0.5*x+2`** for the values of **`x`** we provide for prediction:
 
 To get this model, first clone the TensorFlow Serving repo.
