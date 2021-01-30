@@ -25,7 +25,7 @@ Set path to the location of demo models.
 
 ```
 # Create the local directory
-mkdir -p ~/var/config/
+mkdir -p /var/config/
 
 # Download the sample files into `/var/config/` directory
 wget https://kubernetes.io/examples/configmap/game.properties -O /var/config/game.properties
