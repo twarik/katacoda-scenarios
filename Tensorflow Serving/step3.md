@@ -4,7 +4,7 @@ To deploy a model we create the following resources
 - An Istio virtual service to route traffic to the model and expose it through the Istio gateway
 - An Istio DestinationRule is for doing traffic splitting.
 
-We create the above resources using the Kubernetes config resources.yaml.
+We create the above resources using the Kubernetes config `resources.yaml`.
 
 Install wget package
 `apt install wget`{{execute}}
@@ -17,11 +17,11 @@ Have a look at the yaml file content
 
 `cat ./resources.yaml`{{execute}}
 
-Open the yaml file.
+<!-- Open the yaml file.
 
 The yaml is:
 
-`./resources.yaml`{{open}}
+`./resources.yaml`{{open}} -->
 
 ## Deployed via Kubectl
 
@@ -33,10 +33,10 @@ Create resources using the config resources.yaml
 
 The output should look like:
 
-`service/half-plus-two-service created
-deployment.apps/half-plus-two-v1 created
-destinationrule.networking.istio.io/half-plus-two-service created
-virtualservice.networking.istio.io/half-plus-two-service created`
+`service/customer-churn-service created
+deployment.apps/customer-churn-v1 created
+destinationrule.networking.istio.io/customer-churn-service created
+virtualservice.networking.istio.io/customer-churn-service created`
 
 view the status of the deployment:
 
