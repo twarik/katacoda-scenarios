@@ -6,8 +6,8 @@ To deploy a model we create the following resources
 
 We create the above resources using the Kubernetes config `resources.yaml`.
 
-Install wget package
-`apt install wget`{{execute}}
+<!-- Install wget package
+`apt install wget`{{execute}} -->
 
 Download the yaml manifest for creating resources
 
