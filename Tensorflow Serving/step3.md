@@ -17,6 +17,12 @@ Have a look at the yaml file content
 
 `cat ./resources.yaml`{{execute}}
 
+Open the yaml file.
+
+The yaml is:
+
+`./resources.yaml`{{open}}
+
 ## Deployed via Kubectl
 
 Create resources using the config resources.yaml
