@@ -30,7 +30,7 @@ mkdir -p /var/config/
 # Download the sample files into `/var/config/` directory
 wget https://kubernetes.io/examples/configmap/game.properties -O /var/config/game.properties
 wget https://kubernetes.io/examples/configmap/ui.properties -O /var/config/ui.properties
-
-# Create the configmap
-kubectl create configmap customer-churn-v1-config --from-file=/var/config/
 ```{{execute}}
+
+### Create the configmap
+`kubectl create configmap customer-churn-v1-config --from-file=/var/config/`{{execute}}
