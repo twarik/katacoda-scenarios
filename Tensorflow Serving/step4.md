@@ -1,15 +1,14 @@
-We can now query the service at its external address from our local host
+We can now query the service at its external address
 
-If the service type is LoadBalancer, it will have its own accessible external ip.
 Get the external ip by:
 
 `kubectl get svc customer-churn-service`{{execute}}
 
-And then send the request. Copy the statement below, replace the `machine_ip` with the external (cluster) ip address and then run the code in the terminal.
+Replace the `external_ip` and run the code in the terminal.
 
 `wget https://raw.githubusercontent.com/twarik/maven/main/input.json`{{execute}}
 
-`curl -X POST -d @input.json http://<machine_ip>:8500/v1/models/customer-churn:predict`{{copy}}
+`curl -X POST -d @input.json http://<external_ip>:8500/v1/models/customer-churn:predict`{{copy}}
 
 This should return a set of values: `{ "predictions": [value1, value2, value13, ...] }`
 
