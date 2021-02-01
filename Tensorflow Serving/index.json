@@ -20,6 +20,10 @@
       {
         "title": "Step 4 - send prediction request directly",
         "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - Rolling out model",
+        "text": "step5.md"
       }
     ],
     "intro": {
