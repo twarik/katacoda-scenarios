@@ -1,70 +1,36 @@
-Before getting started, first install kubernetes, docker and tensorflow model server.
+Given that we are running a Kubernetes cluster on a bare metal (private k8s cluster), we need to install **MetalLB** to expose the cluster services on a dedicated IP address on the network.
 
-## Install kubernetes
+Alternatively, If you were using microk8s, you would just enable this add on and provide the IP address pool in the enable command:
 
-We will use microk8s (a low-ops, minimal production Kubernetes) to deploy Kubeflow for our scenario.
+microk8s enable metallb:x.x.x.x-x.x.x.x
 
-`sudo snap install microk8s --classic --channel=1.18/stable`{{execute}}
-<!-- `sudo snap install microk8s --classic`{{execute}} -->
+For cloud users (EKS, GKE), Google Cloud or AWS would do it
 
-Turn on the services need for kubeflow.
+If it is your private k8s cluster, MetalLB would be a better fit. Below are the steps.
 
-<!-- `microk8s enable dashboard dns registry istio`{{execute}} -->
-`microk8s enable dns storage dashboard`{{execute}}
-
-Turn on kubeflow.
-
-`microk8s enable kubeflow`{{execute}}
-
-Check the status while Kubernetes starts
-
-`microk8s status --wait-ready`{{execute}}
-
-## Install docker
+## Step 1: Install MetalLB in your cluster
 
 ```
-apt-get update
-
-apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
-
-curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
-
-apt-key fingerprint 0EBFCD88
-
-add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/debian \
-   $(lsb_release -cs) \
-   stable"
-
-apt-get update
-
-apt-get install docker-ce docker-ce-cli containerd.io
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.3/manifests/namespace.yaml
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.3/manifests/metallb.yaml
+# On first install only
+kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="$(openssl rand -base64 128)"
 ```{{execute}}
 
-Verify that Docker Engine is installed correctly by running the hello-world image.
+Step 2: Configure the MetalLB by using a configmap
 
-`docker run hello-world`{{execute}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: metallb-system
+  name: config
+data:
+  config: |
+    address-pools:
+    - name: default
+      protocol: layer2
+      addresses:
+      - 172.42.42.100-172.42.42.105 #Update this with your Nodes IP range
 
-`docker run hello-world`{{copy}}
-
-## Install TensorFlow model server
-
-
-**Add TensorFlow Serving distribution URI as a package source:**
-
-```
-echo "deb http://storage.googleapis.com/tensorflow-serving-apt stable tensorflow-model-server tensorflow-model-server-universal" | tee /etc/apt/sources.list.d/tensorflow-serving.list && \
-
-curl https://storage.googleapis.com/tensorflow-serving-apt/tensorflow-serving.release.pub.gpg | apt-key add -
-
-apt update
-```{{execute}}
-
-Install model server !
-
-`apt-get install tensorflow-model-server`{{execute}}
+`kubectl apply -f metallb-configmap.yaml`
+Step 3: Create your service to get an external IP (would be a private IP though).
