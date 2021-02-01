@@ -12,3 +12,9 @@ This can be done by updating our `VirtualService` to route a small % of traffic 
 We will be cautious and update our `VirtualService` to route 30% of incoming requests to `v2` model deployment:
 
 `kubectl replace -f https://raw.githubusercontent.com/twarik/maven/main/v2_canary.yaml`{{execute}}
+
+Once the canary version satisfies the model behavior and performance thresholds, the deployment can be promoted to be GA to all users. The following `VirtualService` and `DestinationRule` is configured to route 100% of traffic to `v2` of our model deployment.
+
+`kubectl replace -f https://raw.githubusercontent.com/twarik/maven/main/v2_canary100.yaml`{{execute}}
+
+Traffic completely moved away from v1 and instead flowing into v2 of our deployment.
