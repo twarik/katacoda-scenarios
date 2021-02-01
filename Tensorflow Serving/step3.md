@@ -5,14 +5,13 @@ To deploy a model we create the following resources
 - An Istio DestinationRule is for doing traffic splitting.
 
 We create the above resources using a yaml file.
-<!--
-Download the yaml manifest for creating resources
 
-`wget https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}} -->
+<!-- Download the yaml manifest for creating resources -->
+
+`wget https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
 Have a look at the yaml file content
 
-<!-- `cat ./resources.yaml`{{execute}} -->
-`cat https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
+`cat ./resources.yaml`{{execute}}
 
 <!-- ## Deployed via Kubectl -->
 
