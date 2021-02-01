@@ -9,6 +9,6 @@ Say, we want to deploy a new TensorFlow model version  serving binary. Making ch
 Now that we have our new model deployment, we would like to gradually roll it out to a subset of the users.
 This can be done by updating our `VirtualService` to route a small % of traffic to `v2` subset.
 
-We will be cautious and update our VirtualService to route 30% of incoming requests to v2 model deployment:
+We will be cautious and update our `VirtualService` to route 30% of incoming requests to `v2` model deployment:
 
-`kubectl replace -f v2_canary.yaml`{{execute}}
+`kubectl replace -f https://raw.githubusercontent.com/twarik/maven/main/v2_canary.yaml`{{execute}}
