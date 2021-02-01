@@ -4,39 +4,29 @@ To deploy a model we create the following resources
 - An Istio virtual service to route traffic to the model and expose it through the Istio gateway
 - An Istio DestinationRule is for doing traffic splitting.
 
-We create the above resources using the Kubernetes config `resources.yaml`.
-
-<!-- Install wget package
-`apt install wget`{{execute}} -->
-
+We create the above resources using a yaml file.
+<!--
 Download the yaml manifest for creating resources
 
-`wget https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
-
+`wget https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}} -->
 Have a look at the yaml file content
 
-`cat ./resources.yaml`{{execute}}
+<!-- `cat ./resources.yaml`{{execute}} -->
+`cat https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
 
-<!-- Open the yaml file.
+<!-- ## Deployed via Kubectl -->
 
-The yaml is:
+Create resources via Kubectl.
+<!-- using the config resources.yaml -->
 
-`./resources.yaml`{{open}} -->
-
-## Deployed via Kubectl
-
-Create resources using the config resources.yaml
-
-<!-- `microk8s kubectl create -f ./resources.yaml`{{execute}} -->
-<!-- `kubectl create -f ./resources.yaml`{{execute}} -->
 `kubectl create -f https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
 
-The output should look like:
+<!-- The output should look like:
 
 `service/customer-churn-service created
 deployment.apps/customer-churn-v1 created
 destinationrule.networking.istio.io/customer-churn-service created
-virtualservice.networking.istio.io/customer-churn-service created`
+virtualservice.networking.istio.io/customer-churn-service created` -->
 
 view the status of the deployment:
 
