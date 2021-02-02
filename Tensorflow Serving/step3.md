@@ -8,19 +8,19 @@ Have a look at the yaml file content
 
 `cat ./resources.yaml`{{execute}}
 
-Create resources via Kubectl.
+We use a manifest to create resources via Kubectl.
 
 `kubectl create -f https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
 
-view the status of the deployment:
+View the status of the deployment:
 
 `kubectl get deployments`{{execute}}
 
-view the status of the pods:
+View the status of the pods:
 
 `kubectl get pods`{{execute}}
 
-view the status of the service:
+View the status of the service:
 
 `kubectl get services`{{execute}}
 
