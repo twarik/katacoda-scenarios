@@ -1,31 +1,21 @@
-Create a Deployment,  Service, VirtualService and DestinationRule.
+We can now query the service at its external address
 
-We create the above resources using a yaml file.
+Get the external ip by:
 
-`wget https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
+`kubectl get svc customer-churn-service`{{execute}}
 
-Have a look at the yaml file content
+Replace the `external_ip` and run the code in the terminal.
 
-`cat ./resources.yaml`{{execute}}
+`wget https://raw.githubusercontent.com/twarik/maven/main/input.json`{{execute}}
 
-We use a manifest to create resources via Kubectl.
+`curl -X POST -d @input.json http://<external_ip>:8500/v1/models/customer-churn:predict`{{copy}}
 
-`kubectl create -f https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
+This should return a set of values: `{ "predictions": [value1, value2, value13, ...] }`
 
-View the status of the deployment:
+Alternative
 
-`kubectl get deployments`{{execute}}
+Query the model using the predict API
 
-View the status of the pods:
+<!-- `curl -d '{"instances": [-0.57749609,  0.91324755, -0.6557859 , -0.69539349,  0.32993735, 0.80843615, -1.54035103, -1.02583358, -1.01960511, -0.99850112, 1.72572313, -0.57638802]}' -X POST http://<machine_ip>:8500/v1/models/customer-churn:predict`{{copy}} -->
 
-`kubectl get pods`{{execute}}
-
-View the status of the service:
-
-`kubectl get services`{{execute}}
-
-It can take a while for everything to be up and running.
-
-`kubectl describe service customer-churn-service`{{execute}}
-
-The service external IP address is listed next to LoadBalancer Ingress
+`curl  -k -v -d '{"instances": [-0.57749609,  0.91324755, -0.6557859 , -0.69539349,  0.32993735, 0.80843615, -1.54035103, -1.02583358, -1.01960511, -0.99850112, 1.72572313, -0.57638802]}' -X POST http://<machine_ip>:8500/v1/models/customer-churn:predict`{{copy}}
