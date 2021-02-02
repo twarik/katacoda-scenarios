@@ -6,11 +6,11 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - environment setup",
+        "title": "Step 1 - prepare and store a servable model",
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - prepare and store a servable model",
+        "title": "Step 2 - environment setup",
         "text": "step2.md"
       },
       {
@@ -24,6 +24,10 @@
       {
         "title": "Step 5 - Rolling out model",
         "text": "step5.md"
+      },
+      {
+        "title": "Step 6 - send prediction request to the new model",
+        "text": "step6.md"
       }
     ],
     "intro": {
