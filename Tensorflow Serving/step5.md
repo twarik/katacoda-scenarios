@@ -2,7 +2,7 @@ Say, we want to deploy a new TensorFlow model version  serving binary. Making ch
 
 Upload the new version of the model to the location where you've saved your model.
 
-`wget -qO- https://github.com/twarik/maven/blob/main/saved_model_customer_churn/2.zip?raw=true | bsdtar -xvf- -C ~/Desktop/saved_model`{{execute}}
+`wget -qO- https://github.com/twarik/maven/blob/main/saved_model_customer_churn/2.zip?raw=true | bsdtar -xvf- -C ~/saved_model_customer_churn`{{execute}}
 
 2. Apply the deployment to the cluster:
 
