@@ -1,6 +1,10 @@
 Say, we want to deploy a new TensorFlow model version  serving binary. Making changes to model deployments should always be done in an iterative way such that the new model behavior and performance can be properly tested, validated before being promoted as GA to all clients .
 
-1. Apply the deployment to the cluster:
+Upload the new version of the model to the location where you've saved your model.
+
+`wget -qO- https://github.com/twarik/maven/blob/main/saved_model_customer_churn/2.zip?raw=true | bsdtar -xvf- -C ~/Desktop/saved_model`{{execute}}
+
+2. Apply the deployment to the cluster:
 
 `kubectl apply -f https://raw.githubusercontent.com/twarik/maven/main/resources_2.yaml`{{execute}}
 
