@@ -1,8 +1,9 @@
-To deploy a model we create the following resources
+<!-- To deploy a model we create the following resources
 - A deployment to deploy the model using TFServing
 - A K8s service to create an endpoint a service
 - An Istio virtual service to route traffic to the model and expose it through the Istio gateway
-- An Istio DestinationRule is for doing traffic splitting.
+- An Istio DestinationRule is for doing traffic splitting. -->
+Create a Deployment,  Service, VirtualService and DestinationRule.
 
 We create the above resources using a yaml file.
 
