@@ -7,7 +7,7 @@ We retrieve the SavedModel model from a repo.
 ```
 clear
 
-mkdir -p ~/root/saved_model_customer_churn
+mkdir -p ~/saved_model_customer_churn
 
-wget -qO- https://github.com/twarik/maven/blob/main/saved_model_customer_churn/1.zip?raw=true | bsdtar -xvf- -C ~/root/saved_model_customer_churn
+wget -qO- https://github.com/twarik/maven/blob/main/saved_model_customer_churn/1.zip?raw=true | bsdtar -xvf- -C ~/saved_model_customer_churn
 ```{{execute}}
