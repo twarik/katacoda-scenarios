@@ -3,8 +3,8 @@ For this scenario we will deploy the Tensorflow **customer churn** model trained
 We retrieve the SavedModel model from a repo.
 
 ```
-apt-get update
-apt install bsdtar
+apt-get update  -y
+apt install  -y bsdtar
 clear
 
 mkdir -p ~/root/saved_model_customer_churn
