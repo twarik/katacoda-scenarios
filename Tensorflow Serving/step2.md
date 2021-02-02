@@ -1,8 +1,9 @@
 For this scenario we will deploy the Tensorflow **customer churn** model trained on the notebook server, and exported to a SavedModel(servable) format which we can run with TF serving.
 
-To get this model, We clone the Maven repo.
+We retrieve the SavedModel model from a repo.
 
-`git clone https://github.com/twarik/maven`{{execute}}
+```
+mkdir -p ~/root/saved_model_customer_churn
 
-Set path to the location of demo models.
-`model_dir=/root/maven/saved_model_customer_churn`{{execute}}
+wget -qO- https://github.com/twarik/maven/blob/main/saved_model_customer_churn/1.zip?raw=true | bsdtar -xvf- -C ~/root/saved_model_customer_churn
+```{{execute}}
