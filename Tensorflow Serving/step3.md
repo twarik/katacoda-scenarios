@@ -1,12 +1,12 @@
 Create a Deployment,  Service, VirtualService and DestinationRule.
 
-We create the above resources using a yaml file.
+<!-- We create the above resources using a yaml file.
 
 `wget https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}}
 
 Have a look at the yaml file content
 
-`cat ./resources.yaml`{{execute}}
+`cat ./resources.yaml`{{execute}} -->
 
 We use a manifest to create resources via Kubectl.
 
