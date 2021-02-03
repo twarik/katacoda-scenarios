@@ -34,3 +34,9 @@ The service external IP address is listed next to LoadBalancer Ingress
 ### Creating the Ingress Resource
 
 `kubectl apply -f https://raw.githubusercontent.com/twarik/maven/main/ingress.yaml`{{execute}}
+
+Obtaining the External IP Address of the Load Balancer
+
+To confirm the `customer-churn service` is running as a `LoadBalancer` service, obtain its external IP address by entering:
+
+kubectl get svc --all-namespaces
