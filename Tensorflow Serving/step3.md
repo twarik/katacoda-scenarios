@@ -39,4 +39,4 @@ Obtaining the External IP Address of the Load Balancer
 
 To confirm the `customer-churn service` is running as a `LoadBalancer` service, obtain its external IP address by entering:
 
-kubectl get svc --all-namespaces
+`kubectl get svc --all-namespaces`{{execute}}
