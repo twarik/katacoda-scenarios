@@ -40,8 +40,3 @@ Obtaining the External IP Address of the Load Balancer
 To confirm the `customer-churn service` is running as a `LoadBalancer` service, obtain its external IP address by entering:
 
 `kubectl get svc --all-namespaces`{{execute}}
-
-### Configure Ingress
-To allow incoming traffic into our “mesh”, we need to setup an ingress Gateway. Our Gateway that will act as a load balancing proxy by exposing port 31400 to receive traffic:
-
-`kubectl create -f https://raw.githubusercontent.com/twarik/maven/main/gateway.yaml`{{execute}}
