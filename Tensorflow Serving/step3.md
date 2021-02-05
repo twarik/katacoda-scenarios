@@ -26,7 +26,7 @@ View the status of the service:
 
 It can take a while for everything to be up and running.
 
-`kubectl describe service customer-churn-service`{{execute}}
+`kubectl describe service customerchurn-service`{{execute}}
 
 The service external IP address is listed next to LoadBalancer Ingress
 
@@ -37,6 +37,6 @@ The service external IP address is listed next to LoadBalancer Ingress
 
 Obtaining the External IP Address of the Load Balancer
 
-To confirm the `customer-churn service` is running as a `LoadBalancer` service, obtain its external IP address by entering:
+To confirm the `customerchurn service` is running as a `LoadBalancer` service, obtain its external IP address by entering:
 
 `kubectl get svc --all-namespaces`{{execute}}
