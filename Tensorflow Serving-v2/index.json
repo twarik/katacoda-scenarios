@@ -1,0 +1,46 @@
+{
+  "title": "Kubeflow TFServing",
+  "description": "How to deploy a model with Kubeflow TFServing",
+  "difficulty": "Intermediate",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - prepare and store a servable model",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - environment setup",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - create resources to deploy model",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - send prediction request directly",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - Rolling out model",
+        "text": "step5.md"
+      },
+      {
+        "title": "Step 6 - send prediction request to the new model",
+        "text": "step6.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeflow"
+  }
+}
