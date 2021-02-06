@@ -2,13 +2,13 @@ We can now query the service at its external address
 
 Get the external ip by:
 
-`kubectl get svc customerchurn-service`{{execute}}
+`kubectl get svc customerchurn-serving`{{execute}}
 
 Replace the `external_ip` and run the code in the terminal.
 
 `wget https://raw.githubusercontent.com/twarik/maven/main/input.json`{{execute}}
 
-`curl -X POST -d @input.json http://<external_ip>:8500/v1/models/customerchurn:predict`{{copy}}
+`curl -X POST -d @input.json http://<external_ip>:9001/v1/models/customerchurn:predict`{{copy}}
 
 This should return a set of values: `{ "predictions": [value1, value2, value13, ...] }`
 
