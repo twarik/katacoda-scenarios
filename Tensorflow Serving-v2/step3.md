@@ -11,7 +11,7 @@ Have a look at the yaml file content
 We use a manifest to create resources via Kubectl.
 
 <!-- `kubectl create -f https://raw.githubusercontent.com/twarik/maven/main/resources.yaml`{{execute}} -->
-`kubectl apply -f https://raw.githubusercontent.com/twarik/maven/main/deploy/resources.yaml`{{execute}}
+`kubectl create -f https://raw.githubusercontent.com/twarik/maven/main/deploy/resources.yaml`{{execute}}
 
 View the status of the deployment:
 
