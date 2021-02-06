@@ -20,4 +20,4 @@ The next step is to create our service to get an external IP (would be a private
 ### Configure Ingress
 To allow incoming traffic into our “mesh”, we need to setup an ingress Gateway. Our Gateway that will act as a load balancing proxy by exposing port 31400 to receive traffic:
 
-`kubectl create -f https://raw.githubusercontent.com/twarik/maven/main/gateway.yaml`{{execute}}
+`kubectl apply -f https://raw.githubusercontent.com/twarik/maven/main/deploy/gateway.yaml`{{execute}}
