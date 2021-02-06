@@ -1,8 +1,8 @@
 {
-  "title": "Kubeflow TFServing",
+  "title": "Kubeflow TFServing Version 2",
   "description": "How to deploy a model with Kubeflow TFServing",
   "difficulty": "Intermediate",
-  "time": "60 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {
