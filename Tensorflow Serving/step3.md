@@ -2,6 +2,10 @@ Create a Kubernetes Secret with the S3 access credentials:
 
 `kubectl create -f https://raw.githubusercontent.com/twarik/maven/main/deploy/secrets.yaml`{{execute}}
 
+Create a configMap
+
+`kubectl create configmap config-volume`{{execute}}
+
 Create a Deployment,  Service, VirtualService and DestinationRule.
 
 We use a manifest to create resources via Kubectl.
