@@ -4,6 +4,8 @@ We need to install **MetalLB** to expose the cluster services on a dedicated IP 
 <!-- For cloud users (EKS, GKE), Google Cloud or AWS would do it -->
 ## Step 1: Install MetalLB in our cluster
 ```
+clear
+
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.3/manifests/namespace.yaml
 
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.3/manifests/metallb.yaml
