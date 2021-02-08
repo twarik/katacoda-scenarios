@@ -26,7 +26,6 @@ It can take a while for everything to be up and running.
 
 The service external IP address is listed next to LoadBalancer Ingress
 
-
 ### Creating the Ingress Resource
 
 `kubectl apply -f https://raw.githubusercontent.com/twarik/maven/main/ingress.yaml`{{execute}}
