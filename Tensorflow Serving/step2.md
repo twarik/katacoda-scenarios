@@ -1,3 +1,7 @@
+## kubectl create namespace
+
+`kubectl create namespace tfserving`{{execute}}
+
 We need to install **MetalLB** to expose the cluster services on a dedicated IP address on the network.
 <!-- If you were using microk8s, you would just enable this add-on and provide the IP address pool in the enable command: `microk8s enable metallb:x.x.x.x-x.x.x.x` -->
 
